@@ -6,6 +6,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 main h1 {
@@ -34,4 +35,22 @@ footer {
 
 footer p, address {
     color: white;
+}
+
+article {
+    background-color: #6d0040;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 10px;
+    border: 40px auto;
+
+}
+
+.imagem {
+    height: 300px;
+    width: fit-content;
 }
