@@ -1,0 +1,23 @@
+body {
+    background-color: #2b0019;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+header img {
+    height: 200px;
+}
+
+footer {
+    background-color: #c50073;
+    gap: 30px;
+    padding: 30px;
+    display: block;
+}
+
+footer p, address {
+    color: white;
+}
