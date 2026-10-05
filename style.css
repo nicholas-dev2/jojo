@@ -2,6 +2,20 @@ body {
     background-color: #2b0019;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main h1 {
+    color: white;
+}
+
+main h2 {
+    color: white;
+}
+
 header {
     margin-top: 50px;
     text-align: center;
