@@ -1,12 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #2b0019;
+    margin: 0;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
 }
 
 main h1 {
@@ -28,26 +34,58 @@ header img {
 
 footer {
     background-color: #c50073;
-    gap: 30px;
+    gap: 40px;
     padding: 30px;
     display: block;
+    margin-left: 240px;
 }
 
 footer p, address {
     color: white;
 }
 
-article {
+section {
     background-color: #6d0040;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 70%;
+    width: 50%;
     border-radius: 10px;
-    border: 40px auto;
+    border: 70px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid white;
+}
 
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    background-color: #ad0065;
+    text-align: left;
+    width: 10%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+article p {
+    color: white;
 }
 
 .imagem {
