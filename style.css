@@ -3,16 +3,16 @@ html {
 }
 
 body {
-    background-color: #2b0019;
+    background-color: #F1F0F2;
     margin: 0;
 }
 
 main {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    margin-left: 260px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
 }
 
 main h1 {
@@ -21,6 +21,7 @@ main h1 {
 
 main h2 {
     color: white;
+    font-size: 30px;
 }
 
 header {
@@ -30,14 +31,15 @@ header {
 
 header img {
     height: 200px;
+    margin-left: 260px;
 }
 
 footer {
-    background-color: #c50073;
+    background-color: #542D60;
     gap: 40px;
     padding: 30px;
     display: block;
-    margin-left: 240px;
+    margin-left: 200px;
 }
 
 footer p, address {
@@ -45,24 +47,57 @@ footer p, address {
 }
 
 section {
-    background-color: #6d0040;
+    background-color: #aa64a9;
     text-align: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
     border: 70px;
     padding: 10px;
     margin: 20px auto;
-    border: 2px solid white;
+    border: 2px solid #D9CCD6;
 }
+
+article section p {
+    color: #fffdff;
+    text-align: justify;
+    width: 80%;
+    margin: 10px auto;
+}
+
+article section ul {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+
+article section ul li {
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+}
+
+article section h1 {
+    color: #ffffff;
+}
+
+article section h2 {
+    color: #ffffff;
+}
+
 
 .layout {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
 aside {
-    background-color: #ad0065;
+    background-color: #6D3B78;
     text-align: left;
     width: 10%;
     height: 100vh;
@@ -78,6 +113,22 @@ aside nav {
     flex-direction: column;
 }
 
+aside p {
+    color: white;
+    font-size: 20px;
+}
+
+.protagonista {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.poder {
+    font-size: 15px;
+    margin-left: 20px;
+    color: #e0e0e0;
+}
+
 nav a {
     text-decoration: none;
     color: white;
@@ -91,4 +142,8 @@ article p {
 .imagem {
     height: 300px;
     width: fit-content;
+    background-color: #542D60;
+    border: 5px;
+    padding: 20px;
+    border-radius: 10px;
 }
