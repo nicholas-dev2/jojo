@@ -56,6 +56,7 @@ section {
     padding: 10px;
     margin: 20px auto;
     border: 2px solid #D9CCD6;
+    display: flex;
 }
 
 article section p {
