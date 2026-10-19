@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 .titulo {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .subtitulo {
@@ -28,15 +28,19 @@ h1, h2, h3 {
 }
 
 .intertitulo {
-    font-size: 20px;
+    font-size: 25px;
+}
+
+#introdução {
+    width: 80%;
+    padding: 10px;
 }
 
 header {
     margin-top: 50px;
     text-align: center;
 }
-
-header img {
+#logo {
     height: 200px;
     margin-left: 260px;
 }
@@ -69,7 +73,7 @@ section {
 }
 
 .habilidade {
-    width: 60%;
+    width: 70%;
     padding: 5px;
 }
 
@@ -94,15 +98,6 @@ article section ul li {
     color: white;
     margin-top: 20px;
 }
-
-article section h1 {
-    color: #ffffff;
-}
-
-article section h2 {
-    color: #ffffff;
-}
-
 
 .layout {
     display: flex;
