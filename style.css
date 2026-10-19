@@ -149,3 +149,8 @@ article p {
     border-radius: 10px;
 }
 
+.habilidade li {
+    color:rgb(255, 255, 255);
+    background-color: rgb(68, 0, 68);
+
+}
