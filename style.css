@@ -15,13 +15,20 @@ main {
     padding: 0 30px;
 }
 
-main h1 {
+h1, h2, h3 {
     color: white;
 }
 
-main h2 {
-    color: white;
+.titulo {
+    font-size: 50px;
+}
+
+.subtitulo {
     font-size: 30px;
+}
+
+.intertitulo {
+    font-size: 20px;
 }
 
 header {
@@ -42,7 +49,7 @@ footer {
     margin-left: 200px;
 }
 
-footer p, address {
+address {
     color: white;
 }
 
@@ -50,17 +57,27 @@ section {
     background-color: #aa64a9;
     text-align: center;
     align-items: center;
-    width: 80%;
     border-radius: 10px;
     border: 70px;
-    padding: 10px;
     margin: 20px auto;
     border: 2px solid #D9CCD6;
-    display: flex;
 }
 
-article section p {
+.personagem {
+    width: 80%;
+    padding: 10px;
+}
+
+.habilidade {
+    width: 60%;
+    padding: 5px;
+}
+
+p {
     color: #fffdff;
+}
+
+.texto {
     text-align: justify;
     width: 80%;
     margin: 10px auto;
@@ -114,11 +131,6 @@ aside nav {
     flex-direction: column;
 }
 
-aside p {
-    color: white;
-    font-size: 20px;
-}
-
 .protagonista {
     font-size: 20px;
     margin-top: 20px;
@@ -136,10 +148,6 @@ nav a {
     font-size: 20px;
 }
 
-article p {
-    color: white;
-}
-
 .imagem {
     height: 300px;
     width: fit-content;
@@ -147,10 +155,4 @@ article p {
     border: 5px;
     padding: 20px;
     border-radius: 10px;
-}
-
-.habilidade li {
-    color:rgb(255, 255, 255);
-    background-color: rgb(68, 0, 68);
-
 }
