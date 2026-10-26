@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jojo's Bizarre Adventure - {% block title %} Protagonistas {% endblock %} </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" type="image/jpg" href="imagens/favicon.jpg">
+    </head>
+
+    <body>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <p>Site desenvolvido para fins educacionais.</p>
+            <p>Contato:</p><address>nicholas.m@escolar.ifrn.edu.br/kaio.manoel@escolar.ifrn.edu.br</address>
+        </footer>
+    </body>
+</html>
