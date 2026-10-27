@@ -8,6 +8,12 @@
     </head>
 
     <body>
+        <header>
+            <figure>
+                <img src="{{ url_for('static', filename='imagens/logo.png' )}}" alt="Logo de JoJo's" id="logo">
+            </figure>
+        </header>
+
         <main>
             {% block content %}
             {% endblock %}

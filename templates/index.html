@@ -1,27 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <aside>
-        <p class="texto">Protagonistas:</p>
-        <nav>
-            <a href="{{ url_for('jonathan') }}" class="protagonista">Jonathan</a>
-            <a href="#hamon1" class="poder">Hamon do Jonathan</a>
-            <a href="{{ url_for('joseph') }}" class="protagonista">Joseph</a>
-            <a href="#hamon2" class="poder">Hamon do Joseph</a>
-            <a href="{{ url_for('jotaro') }}" class="protagonista">Jotaro</a>
-            <a href="#starplatinum" class="poder">Star Platinum</a>
-            <a href="{{ url_for('josuke') }}" class="protagonista">Josuke</a>
-            <a href="#crazydiamond" class="poder">Crazy Diamond</a>
-            <a href="{{ url_for('giorno') }}" class="protagonista">Giorno</a>
-            <a href="#goldexperience" class="poder">Gold Experience</a>
-            <a href="{{ url_for('jolyne') }}" class="protagonista">Jolyne</a>
-            <a href="#stonefree" class="poder">Stone Free</a>
-        </nav>
-    </aside>
     <article class="layout">
         <section id="introdução">
             <h1>Jojo's Bizarre Adventure</h1>
             <p class="texto">A história de JoJo's Bizarre Adventure acompanha a saga multigeracional da família Joestar em sua luta constante contra forças sobrenaturais e vilões excêntricos. Escrita e ilustrada por Hirohiko Araki, a obra se divide em várias partes independentes, onde cada arco foca em um novo descendente da linhagem — carinhosamente apelidado de "JoJo".</p>
         </section>
+        <nav>
+            <h3 class="intertitulo" style="margin-top: 0px;">PROTAGONISTAS</h3>
+            <article id="imagens">
+                <figure class="card">
+                    <a href="{{ url_for('jonathan') }}" class="protagonista"><img src="{{ url_for('static', filename='imagens/jonathan_icon.png') }}"></a>
+                </figure class="card">
+                <figure class="card">
+                    <a href="{{ url_for('joseph') }}" class="protagonista"><img src="{{ url_for('static', filename='imagens/joseph_icon.png') }}"></a>
+                </figure>
+                <figure class="card">
+                    <a href="{{ url_for('jotaro') }}" class="protagonista"><img src="{{ url_for('static', filename='imagens/jotaro_icon.png') }}"></a>
+                </figure>
+                <figure class="card">
+                    <a href="{{ url_for('josuke') }}" class="protagonista"><img src="{{ url_for('static', filename='imagens/josuke_icon.webp') }}"></a>
+                </figure>
+                <figure class="card">
+                    <a href="{{ url_for('giorno') }}" class="protagonista"><img src="{{ url_for('static', filename='imagens/giorno_icon.webp') }}"></a>
+                </figure>
+                <figure class="card">
+                    <a href="{{ url_for('jolyne') }}" class="protagonista"><img src="{{ url_for('static', filename='imagens/jolyne_icon.png') }}"></a>
+                </figure>
+            </article>
+        </nav>
     </article>
 {% endblock %}
