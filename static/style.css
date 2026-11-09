@@ -1,9 +1,10 @@
 :root {
     --main-color: #170D2B;
-    --second-colod: #F1EAF8;
+    --second-color: #F1EAF8;
     --third-color: #49306B;
     --text-color-main: #7136A7;
-    --conteiner-width: 80%;
+    --conteiner-width: 70%;
+    --conteiner-padding: 10px;
 }
 
 html {
@@ -18,7 +19,7 @@ body {
 main {
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    padding: 0px;
 }
 
 h1, h2, h3 {
@@ -64,23 +65,15 @@ address {
 }
 
 section {
-    background-color: var(--main-color);
+    background-color:  var(--second-color);
     text-align: center;
     align-items: center;
     border-radius: 10px;
     border: 70px;
     margin: 20px auto;
     border: 2px solid #D9CCD6;
-}
-
-.personagem {
-    width: 80%;
-    padding: 10px;
-}
-
-.habilidade {
     width: var(--conteiner-width);
-    padding: 5px;
+    padding: var(--conteiner-padding);
 }
 
 p {
@@ -116,17 +109,19 @@ article section ul li {
 
 
 nav {
-    background-color: var(--main-color);
-    padding: 30px;
+    background-color: var(--second-color);
+    padding: var(--conteiner-padding);
     border-radius: 10px;
-    text-align: center;
-    padding: 30px;
     margin: 0;
     border: 2px solid #D9CCD6;
+    width: var(--conteiner-width);
 }
 
 #imagens {
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
