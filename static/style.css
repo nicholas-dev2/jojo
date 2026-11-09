@@ -3,7 +3,8 @@
     --second-color: #F1EAF8;
     --third-color: #49306B;
     --text-color-main: #7136A7;
-    --conteiner-width: 70%;
+    --text-color-second: #FFFF;
+    --conteiner-width: 60%;
     --conteiner-padding: 10px;
 }
 
@@ -76,25 +77,26 @@ section {
     padding: var(--conteiner-padding);
 }
 
-p {
-    color: var(--text-color-main);
-}
-
 .texto {
+    color: var(--text-color-main);
     text-align: justify;
     width: 90%;
     margin: 10px auto;
 }
 
-article section ul {
-    width: 80%;
+.text-footer {
+    color: var(--text-color-second)
+}
+
+.power-list {
+    width: 90%;
     margin: 10px auto;
     margin-top: 30px;
 }
 
-article section ul li {
+.power-item {
     text-align: justify;
-    color: white;
+    color: var(--text-color-main);
     margin-top: 20px;
 }
 
@@ -159,8 +161,6 @@ nav a {
 .imagem {
     height: 300px;
     width: fit-content;
-    background-color: #542D60;
-    border: 5px;
-    padding: 20px;
+    border: 5px solid var(--main-color);
     border-radius: 10px;
 }

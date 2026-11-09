@@ -10,7 +10,7 @@
     <body>
         <header>
             <figure>
-                <img src="{{ url_for('static', filename='imagens/logo.png' )}}" alt="Logo de JoJo's" id="logo">
+                <a href="{{ url_for('home')  }}"><img src="{{ url_for('static', filename='imagens/logo.png' )}}" alt="Logo de JoJo's" id="logo"></a>
             </figure>
         </header>
 
@@ -19,8 +19,8 @@
             {% endblock %}
         </main>
         <footer>
-            <p>Site desenvolvido para fins educacionais.</p>
-            <p>Contato:</p><address>nicholas.m@escolar.ifrn.edu.br/kaio.manoel@escolar.ifrn.edu.br</address>
+            <p class="text-footer">Site desenvolvido para fins educacionais.</p>
+            <p class="text-footer">Contato:</p><address>nicholas.m@escolar.ifrn.edu.br/kaio.manoel@escolar.ifrn.edu.br</address>
         </footer>
     </body>
 </html>
