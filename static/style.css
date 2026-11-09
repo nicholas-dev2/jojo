@@ -1,9 +1,17 @@
+:root {
+    --main-color: #170D2B;
+    --second-colod: #F1EAF8;
+    --third-color: #49306B;
+    --text-color-main: #7136A7;
+    --conteiner-width: 80%;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #F1F0F2;
+    background-color: var(--main-color);
     margin: 0;
 }
 
@@ -14,7 +22,7 @@ main {
 }
 
 h1, h2, h3 {
-    color: white;
+    color: var(--text-color-main);
 }
 
 .titulo {
@@ -30,7 +38,7 @@ h1, h2, h3 {
 }
 
 #introdução {
-    width: 75%;
+    width: var(--conteiner-width);
     padding: 10px;
 }
 
@@ -38,12 +46,13 @@ header {
     margin-top: 50px;
     text-align: center;
 }
+
 #logo {
     height: 200px;
 }
 
 footer {
-    background-color: #542D60;
+    background-color: var(--third-color);
     gap: 40px;
     padding: 30px;
     display: block;
@@ -51,11 +60,11 @@ footer {
 }
 
 address {
-    color: white;
+    color: var(--text-color-second);
 }
 
 section {
-    background-color: #aa64a9;
+    background-color: var(--main-color);
     text-align: center;
     align-items: center;
     border-radius: 10px;
@@ -70,12 +79,12 @@ section {
 }
 
 .habilidade {
-    width: 70%;
+    width: var(--conteiner-width);
     padding: 5px;
 }
 
 p {
-    color: #fffdff;
+    color: var(--text-color-main);
 }
 
 .texto {
@@ -107,7 +116,7 @@ article section ul li {
 
 
 nav {
-    background-color: #aa64a9;
+    background-color: var(--main-color);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
