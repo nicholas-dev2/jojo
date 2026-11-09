@@ -161,6 +161,11 @@ nav a {
 .imagem {
     height: 300px;
     width: fit-content;
-    border: 5px solid var(--main-color);
+    border: 5px solid var(--third-color);
     border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.imagem:hover {
+        transform: scale(1.05);
 }
