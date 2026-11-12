@@ -15,17 +15,16 @@
             </figure>
         </header>
 
-        <nav id="navigation">
-            <a href="{{ url_for('home') }}">Home</a>
-            <a href="{{ url_for('jonathan') }}">Jonathan</a>
-            <a href="{{ url_for('joseph') }}">Joseph</a>
-            <a href="{{ url_for('jotaro') }}">Jotaro</a>
-            <a href="{{ url_for('josuke') }}">Josuke</a>
-            <a href="{{ url_for('giorno') }}">Giorno</a>
-            <a href="{{ url_for('jolyne') }}">Jolyne</a>
-        </nav>
-
         <main>
+            <nav id="navigation">
+                <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+                <a href="{{ url_for('jonathan') }}" class="nav-link">Jonathan</a>
+                <a href="{{ url_for('joseph') }}" class="nav-link">Joseph</a>
+                <a href="{{ url_for('jotaro') }}" class="nav-link">Jotaro</a>
+                <a href="{{ url_for('josuke') }}" class="nav-link">Josuke</a>
+                <a href="{{ url_for('giorno') }}" class="nav-link">Giorno</a>
+                <a href="{{ url_for('jolyne') }}" class="nav-link">Jolyne</a>
+            </nav>
             {% block content %}
             {% endblock %}
         </main>
