@@ -44,6 +44,10 @@ def create_app(test_config=None):
     def jolyne():
         return render_template('jolyne.html')
 
+    @app.route('/editor')
+    def editor():
+        return render_template('admin/editor.html')
+
     return app
 
 if __name__ == "__main__":
