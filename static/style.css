@@ -10,6 +10,8 @@
     --conteiner-padding: 10px;
 }
 
+/* Configurações gerais*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -41,23 +43,6 @@ main {
     color: var(--text-color-main);
 }
 
-header {
-    margin-top: 50px;
-    text-align: center;
-}
-
-#logo {
-    height: 200px;
-}
-
-footer {
-    background-color: var(--third-color);
-    gap: 40px;
-    padding: 30px;
-    display: block;
-    margin-top: 30px;
-}
-
 .conteiner {
     background-color:  var(--second-color);
     text-align: center;
@@ -78,9 +63,50 @@ footer {
     font-size: 20px;
 }
 
+#navigation {
+    background-color: var(--third-color);
+    width: 60%;
+    margin: 40px auto;
+    padding: var(--conteiner-padding);
+    border-radius: 10px;
+    border: 2px solid var(--text-color-second);
+    text-align: center
+}
+
+.nav-link {
+    color: var(--text-color-second);
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 11px;
+}
+
+
+/* Configurações do base*/
+
+header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#logo {
+    height: 200px;
+}
+
+footer {
+    background-color: var(--third-color);
+    gap: 40px;
+    padding: 30px;
+    display: block;
+    margin-top: 30px;
+}
+
 .text-footer, address {
     color: var(--text-color-second)
 }
+
+
+/*Configurações do personagem*/
 
 .power-list {
     width: 90%;
@@ -94,6 +120,21 @@ footer {
     margin-top: 20px;
     font-size: 20px;
 }
+
+.imagem {
+    height: 270px;
+    width: 250px;
+    border: 5px solid var(--third-color);
+    border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
+    margin-right: 30px;
+}
+
+.imagem:hover {
+        transform: scale(1.05);
+}
+
+/*Configurações do index*/
 
 .nav-home {
     background-color: var(--second-color);
@@ -133,19 +174,6 @@ footer {
     background-color: var(--text-color-main);
 } 
 
-.imagem {
-    height: 270px;
-    width: 250px;
-    border: 5px solid var(--third-color);
-    border-radius: 10px;
-    transition: transform 0.1s ease-in-out;
-    margin-right: 30px;
-}
-
-.imagem:hover {
-        transform: scale(1.05);
-}
-
 .protagonista {
     height: 170px;
 }
@@ -153,24 +181,6 @@ footer {
 .nome-personagem {
     color: var(--text-color-main);
     font-size: 20px;
-}
-
-#navigation {
-    background-color: var(--third-color);
-    width: 50%;
-    margin: 40px auto;
-    padding: var(--conteiner-padding);
-    border-radius: 10px;
-    border: 2px solid var(--text-color-second);
-    text-align: center
-}
-
-.nav-link {
-    color: var(--text-color-second);
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 11px;
 }
 
 .card-layout {
