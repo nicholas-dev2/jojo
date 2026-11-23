@@ -1,36 +1,36 @@
 {
-    "nome": "Joseph Joestar",
+    "nome": "Giorno Giovanna",
 
-    "imagem": "joseph.jfif",
+    "imagem": "Giorno.jpg",
 
-    "descrição_imagem": "Segundo protagonista de JoJo, Joseph Joestar",
+    "descrição_imagem": "Quinto protagonista (Giorno) de Jojo",
 
-    "resumo": "Joseph é o neto de Jonathan e possui uma personalidade bastante diferente da dele. Extrovertido, brincalhão e provocador, costuma confiar mais na criatividade e na improvisação do que em planos elaborados. Apesar de seu comportamento descontraído, é inteligente, observador e capaz de encontrar soluções inesperadas para situações complicadas. Também demonstra preocupação com as pessoas próximas.",
+    "resumo": "Giorno é ambicioso, disciplinado e extremamente determinado. Seu grande objetivo é transformar o mundo do crime italiano, combatendo a exploração de pessoas inocentes. Apesar de jovem, demonstra maturidade, inteligência estratégica e uma forte convicção em seus ideais.",
 
     "secoes": [
         {
-            "titulo": "O Hamon do Joseph",
+            "titulo": "Gold Experience",
 
-            "descricao": "Joseph aprende Hamon com Lisa Lisa, uma especialista extremamente habilidosa (e sua mãe), com a ajuda de seu assistente Messina. Seu treinamento acontece em Veneza, na Itália, como preparação para enfrentar os Homens do Pilar.",
+            "descricao": "Giorno é filho biológico de Dio, mas possui uma ligação genética com Jonathan Joestar, pois Dio utilizava o corpo de Jonathan. Seu Stand nasce de seu potencial espiritual, e ele desenvolve suas capacidades ao longo da luta contra a organização mafiosa Passione.",
 
             "tipo_lista": "ul",
 
             "habilidades": [
                 {
-                    "titulo": "Como funciona",
-                    "descricao": "Assim como Jonathan, Joseph utiliza a respiração para produzir Hamon, mas costuma aplicar a energia de maneira criativa, inclusive por meio de objetos condutores."
+                    "titulo": "Poderes",
+                    "descricao": "Gold Experience pode dar vida a objetos inanimados, transformando-os em organismos vivos, como animais e plantas. Também pode utilizar essa capacidade de maneiras estratégicas durante os combates."
                 },
                 {
                     "titulo": "Estilo de luta",
-                    "descricao": "Improvisação, armadilhas, blefes, leitura dos adversários e combate físico. Joseph prefere enganar o oponente a enfrentá-lo de maneira previsível."
+                    "descricao": "estratégia, adaptação, criação de recursos e exploração das possibilidades de seu poder."
                 },
                 {
-                    "titulo": "Técnicas marcantes",
-                    "descricao": "Clacker Volley, uso de Hamon em objetos e estratégias de combate baseadas em previsões e truques."
+                    "titulo": "Evolução:",
+                    "descricao": "mais adiante, Giorno obtém Gold Experience Requiem, uma forma extraordinária capaz de anular ações e impedir que seus resultados se concretizem."
                 },
                 {
                     "titulo": "Lore",
-                    "descricao": "Neto de Jonathan, Joseph descobre a existência dos Homens do Pilar, seres antigos ligados à origem da Máscara de Pedra. Ele enfrenta personagens como Esidisi, Wamuu e Kars. Sua maior característica é transformar inteligência e imprevisibilidade em armas, mesmo quando está em desvantagem."
+                    "descricao": "vivendo na Itália, Giorno deseja se tornar um Gang-Star para reformar a máfia por dentro e impedir que drogas sejam vendidas a crianças. Ele se junta à equipe de Bruno Bucciarati e enfrenta os líderes de Passione."
                 }
             ]
         }
