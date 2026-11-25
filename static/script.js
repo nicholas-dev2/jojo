@@ -18,6 +18,7 @@ function fillData(dados) {
     habilidade1.textContent = dados.secoes[0].habilidades[0].titulo + ": " + dados.secoes[0].habilidades[0].descricao;
     habilidade2.textContent = dados.secoes[0].habilidades[1].titulo + ": " + dados.secoes[0].habilidades[1].descricao;
     habilidade3.textContent = dados.secoes[0].habilidades[2].titulo + ": " + dados.secoes[0].habilidades[2].descricao;
+    habilidade4.textContent = dados.secoes[0].habilidades[3].titulo + ": " + dados.secoes[0].habilidades[3].descricao
 }
 
 function registerButtons(inicio, fim, lista, radical) {
@@ -40,6 +41,7 @@ let descricacaoSecao = document.getElementById("descricaoSecao");
 let habilidade1 = document.getElementById("habilidade1");
 let habilidade2 = document.getElementById("habilidade2");
 let habilidade3 = document.getElementById("habilidade3");
+let habilidade4 = document.getElementById("habilidade4");
 
 const protagonistas = [
     "jonathan",

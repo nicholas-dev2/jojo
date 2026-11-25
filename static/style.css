@@ -1,4 +1,3 @@
-@import url('https://googleapis.com');
 
 :root {
     --main-color: #170D2B;
@@ -185,4 +184,11 @@ footer {
 
 .card-layout {
     display: flex;
+}
+
+.conteiner section.margem {
+    padding: 5%;
+    background-color: rgba(73, 70, 70, 0.753);
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
