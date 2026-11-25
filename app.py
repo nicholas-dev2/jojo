@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify
 import os
-from flaskr.database import get_db
+from flaskr.database import get_db, close_db, init_db_command
+from flaskr.seed import fill_db_command
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -17,30 +18,35 @@ def create_app(test_config=None):
 
     os.makedirs(app.instance_path, exist_ok=True)
 
+    app.teardown_appcontext(close_db)
+
+    app.cli.add_command(init_db_command)
+    app.cli.add_command(fill_db_command)
+
     @app.route('/')
     def home():
         return render_template('index.html')
     
-    @app.route('/personagem/<int:id_protagonista>')
-    def personagem(id_protagonista):
+    @app.route('/<nome>')
+    def personagem(nome):
         return render_template(
             'personagem.html',
-            personagem_id=id_protagonista
+            nome=nome
         )
 
-    @app.route('/<int:id_protagonista>')
-    def buscar_personagem(id_protagonista):
+    @app.route('/api/<nome>')
+    def buscar_personagem(nome):
         db = get_db()
 
-        protagonista = db.execute('SELECT * FROM personagens WHERE id = ?', 
-            (id_protagonista,)).fetchone()
+        protagonista = db.execute('SELECT * FROM personagens WHERE slug = ?', 
+            (nome,)).fetchone()
         
         if protagonista is None:
             return jsonify({'erro': 'Personagem não encontrado'}), 404
         
         secoes = db.execute(
             'SELECT * FROM secoes WHERE personagem_id = ?',
-        (id_protagonista,)).fetchall()
+        (protagonista['id'],)).fetchall()
 
         resultado = dict(protagonista)
         resultado['secoes'] = []

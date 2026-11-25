@@ -18,12 +18,12 @@
         <main>
             <nav id="navigation">
                 <a href="{{ url_for('home') }}" class="nav-link" id="link1">Home</a>
-                <a href="{{ url_for('jonathan') }}" class="nav-link" id="link2">Jonathan</a>
-                <a href="{{ url_for('joseph') }}" class="nav-link" id="link3">Joseph</a>
-                <a href="{{ url_for('jotaro') }}" class="nav-link" id="link4">Jotaro</a>
-                <a href="{{ url_for('josuke') }}" class="nav-link" id="link5">Josuke</a>
-                <a href="{{ url_for('giorno') }}" class="nav-link" id="link6">Giorno</a>
-                <a href="{{ url_for('jolyne') }}" class="nav-link" id="link7">Jolyne</a>
+                <a href="{{ url_for('personagem', nome='jonathan') }}" class="nav-link" id="link2">Jonathan</a>
+                <a href="{{ url_for('personagem', nome='joseph') }}" class="nav-link" id="link3">Joseph</a>
+                <a href="{{ url_for('personagem', nome='jotaro') }}" class="nav-link" id="link4">Jotaro</a>
+                <a href="{{ url_for('personagem', nome='josuke') }}" class="nav-link" id="link5">Josuke</a>
+                <a href="{{ url_for('personagem', nome='giorno') }}" class="nav-link" id="link6">Giorno</a>
+                <a href="{{ url_for('personagem', nome='jolyne') }}" class="nav-link" id="link7">Jolyne</a>
             </nav>
             {% block content %}
             {% endblock %}

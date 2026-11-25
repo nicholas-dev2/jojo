@@ -4,7 +4,8 @@ CREATE TABLE IF NOT EXISTS personagens (
     nome TEXT NOT NULL UNIQUE,
     resumo TEXT NOT NULL,
     imagem TEXT,
-    descricao_imagem TEXT
+    descricao_imagem TEXT,
+    slug TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS secoes (

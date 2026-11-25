@@ -22,21 +22,23 @@ def fill_db():
 
                 db.execute('''
                     INSERT INTO personagens(
-                        nome, resumo, imagem, descricao_imagem
+                        nome, resumo, imagem, descricao_imagem, slug
                     )
 
-                    VALUES (?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?)
 
                     ON CONFLICT(nome) DO UPDATE SET
                         resumo = excluded.resumo,
                         imagem = excluded.imagem,
-                        descricao_imagem = excluded.descricao_imagem
+                        descricao_imagem = excluded.descricao_imagem,
+                        slug = excluded.slug
                 ''', (
 
                     personagem['nome'],
                     personagem['resumo'],
                     personagem['imagem'],
-                    personagem.get('descricao_imagem')
+                    personagem.get('descricao_imagem'),
+                    protagonista
                 ))
 
                 id_protagonista = db.execute(
@@ -49,7 +51,7 @@ def fill_db():
                     (id_protagonista,)
                 )
 
-                for seção in protagonista['secoes']:
+                for seção in personagem['secoes']:
                     cursor = db.execute('''
                         INSERT INTO secoes
                             (personagem_id, titulo, descricao, tipo_lista)
