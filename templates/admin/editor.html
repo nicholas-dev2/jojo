@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>Editor</title>
+        <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     </head>
     <body>
         <header class="titulo">
@@ -12,37 +13,37 @@
         <main class="texto">
             <article class="conteiner">
                 <section class="intertitulo margem">
-                    <h2 class="subtitulo">Johathan</h2>
-                    <button>Editar</button>
+                    <h2 class="subtitulo">Jonathan</h2>
+                    <button id="editar1">Editar</button>
                     <button>Excluir</button>
 
                 </section>
                 <section class="intertitulo margem">
                     <h2 class="subtitulo">Joseph</h2>
-                    <button>Editar</button>
+                    <button id="editar2">Editar</button>
                     <button>Excluir</button>
                 </section>
                 <section class="intertitulo margem">
                     <h2 class="subtitulo">Jotaro</h2>
-                    <button>Editar</button>
+                    <button id="editar3">Editar</button>
                     <button>Excluir</button>
 
                 </section>
                 <section class="intertitulo margem">
                     <h2 class="subtitulo">Josuke</h2>
-                    <button>Editar</button>
+                    <button id="editar4">Editar</button>
                     <button>Excluir</button>
    
                 </section>
                 <section>
-                    <h2>Gionor</h2>
-                    <button>Editar</button>
+                    <h2>Giorno</h2>
+                    <button class="id">Editar</button>
                     <button>Excluir</button>
       
                 </section>
                 <section class="intertitulo margem">
                     <h2 class="subtitulo">Jolyne</h2>
-                    <button>Editar</button>
+                    <button id="editar6">Editar</button>
                     <button>Excluir</button>
                     
                 </section>
@@ -50,9 +51,85 @@
                     <h2 class="subtitulo">Adicionar personagem</h2>
                     <button>Editar</button>
                     <button>Excluir</button>
-                    
                 </section>
-        
+
+
+                <section class="painel-edicao" id="painel">
+                    <h2>Painel de edição</h2>
+
+                    <form id="formEdicao">
+
+                        <fieldset>
+                            <legend>Informações do protagonista</legend>
+
+                            <label for="descricao">Descrição:</label>
+                            <textarea id="descricao" name="descricao"></textarea>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Informações da seção</legend>
+
+                            <label for="tituloSecao">Título da seção:</label>
+                            <input type="text" id="tituloSecao" name="tituloSecao">
+
+                            <label for="descricaoSecao">Descrição da seção:</label>
+                            <textarea id="descricaoSecao" name="descricaoSecao"></textarea>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Configurações da lista</legend>
+
+                            <p>Tipo de lista:</p>
+
+                            <label for="listaUl">
+                                <input type="radio" id="listaUl" name="tipoLista" value="ul" checked>
+                                Não ordenada
+                            </label>
+
+                            <label for="listaOl">
+                                <input type="radio" id="listaOl" name="tipoLista" value="ol">
+                                Ordenada
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Habilidades</legend>
+
+                            <div class="habilidade">
+                                <h3>Habilidade 1</h3>
+
+                                <label for="tituloHabilidade1">Título:</label>
+                                <input type="text" id="tituloHabilidade1" name="habilidades[0][titulo]">
+
+                                <label for="descricaoHabilidade1">Descrição:</label>
+                                <textarea id="descricaoHabilidade1" name="habilidades[0][descricao]"></textarea>
+                            </div>
+
+                            <div class="habilidade">
+                                <h3>Habilidade 2</h3>
+
+                                <label for="tituloHabilidade2">Título:</label>
+                                <input type="text" id="tituloHabilidade2" name="habilidades[1][titulo]">
+
+                                <label for="descricaoHabilidade2">Descrição:</label>
+                                <textarea id="descricaoHabilidade2" name="habilidades[1][descricao]"></textarea>
+                            </div>
+
+                            <div class="habilidade">
+                                <h3>Habilidade 3</h3>
+
+                                <label for="tituloHabilidade3">Título:</label>
+                                <input type="text" id="tituloHabilidade3" name="habilidades[2][titulo]">
+
+                                <label for="descricaoHabilidade3">Descrição:</label>
+                                <textarea id="descricaoHabilidade3" name="habilidades[2][descricao]"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit">Salvar alterações</button>
+
+                    </form>
+                </section>
             </article>
         </main>
     </body>

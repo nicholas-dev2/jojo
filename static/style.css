@@ -192,3 +192,7 @@ footer {
     margin-bottom: 20px;
     border-radius: 8px;
 }
+
+.painel-edicao {
+    display: none;
+}
